@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Color scheme name = 'Copy of Dpm' courtesy of from kuler.adobe.com */ 
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #E63F03;
+	color: #FEAA04;
+	padding: 10px;
+}
+h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: rgb(254,170,4);
+	color: #CA361E;
+	padding: 10px;
+}
+body {
+	background-color: #ffffff;
+	background-color: hsla(60,100%,90%,1);
+	color: midnightblue;
+}
+
+ul {
+	background-color: sandybrown;
+	background-color: hsl(20,100%,70%);
+	color: #3D2201;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ul li {
+	padding-bottom: 5px;
+}
+
+
+
