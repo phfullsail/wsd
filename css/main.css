@@ -8,14 +8,27 @@ h1 {
 	background-color: #E63F03;
 	color: #FEAA04;
 	padding-left: 10px;
+	margin: 20px 20px 10px 20px;
+	border: 2px groove #600;
 	text-shadow: 1px 1px 3px #033;
+	text-align: center;
+	box-shadow: 2px 2px 6px 1px #600; 
 }
 h2 {
+	width: 900px;
+	height: 40px;
 	font: normal small-caps 22pt/1 'Balthazar', serif;;
 	background-color: rgb(254,170,4);
 	color: #CA361E;
-	padding-left: 10px;
+	padding: 10px 0 5px 10px;
+	margin: 20px auto 10px auto;
+	border: 2px groove #600;
 	text-shadow: 1px 1px 2px #033;
+	text-align: center;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 body {
 	background-color: #ffffff;
@@ -24,20 +37,40 @@ body {
 }
 
 ul {
+	width: 860px;
+	height: 160px;
 	background-color: sandybrown;
 	background-color: hsl(20,100%,70%);
 	color: #3D2201;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 30px 15px 10px 35px;
+	margin: 10px auto;
+	border: 2px groove #600;
+}
+
+p {
+	margin: 20px 30px 10px 30px;
+	padding: 5px 30px 5px 30px;
 }
 
 ul li {
-	padding-bottom: 5px;
+	padding-bottom: 15px;
+	list-style-type: circle;
 }
 
 #list-text {
 	text-align: justify;
 	padding-left: 5px;
+	width: 850px;
+	margin: 10px auto 5px auto;
+}
+
+#list-item {
+	display: inline;	
+}
+
+#link-resource {
+	width: 900px;
+	display: inline;
 }
 
 a:link {
