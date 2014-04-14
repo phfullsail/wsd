@@ -2,26 +2,34 @@
 /* CSS Document */
 
 /* Color scheme name = 'Copy of Dpm' courtesy of from kuler.adobe.com */ 
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	background-color: hsla(60,100%,90%,1);
+	color: midnightblue;
+}
+
 h1 {
-	font: italic normal bold 26pt/2 'Unlock', cursive;
+	width: 100%;
+	font: italic normal bold 2.5em 'Unlock', cursive;
 	letter-spacing: 0.2em;
 	background-color: #E63F03;
 	color: #FEAA04;
-	padding-left: 10px;
-	margin: 20px 20px 10px 20px;
+	padding: 5px;
 	border: 2px groove #600;
 	text-shadow: 1px 1px 3px #033;
 	text-align: center;
 	box-shadow: 2px 2px 6px 1px #600; 
 }
+
 h2 {
-	width: 900px;
 	height: 40px;
-	font: normal small-caps 22pt/1 'Balthazar', serif;;
+	font: normal small-caps 1.8em 'Balthazar', serif;
 	background-color: rgb(254,170,4);
 	color: #CA361E;
-	padding: 10px 0 5px 10px;
-	margin: 20px auto 10px auto;
+	padding: 2px;
 	border: 2px groove #600;
 	text-shadow: 1px 1px 2px #033;
 	text-align: center;
@@ -30,15 +38,9 @@ h2 {
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 }
-body {
-	background-color: #ffffff;
-	background-color: hsla(60,100%,90%,1);
-	color: midnightblue;
-}
+
 
 ul {
-	width: 860px;
-	height: 160px;
 	background-color: sandybrown;
 	background-color: hsl(20,100%,70%);
 	color: #3D2201;
@@ -48,8 +50,8 @@ ul {
 }
 
 p {
-	margin: 20px 30px 10px 30px;
-	padding: 5px 30px 5px 30px;
+	margin: 10px;
+	padding: 5px;
 }
 
 ul li {
@@ -57,10 +59,27 @@ ul li {
 	list-style-type: circle;
 }
 
+#colLeft {
+	float: left;
+	width: 69%;
+	margin: 1%;
+	padding: 5px;
+}
+
+#colRight {
+	float: left;
+	width: 24%;
+	margin: 1%;
+	padding: 5px;
+}
+
+#footer {
+	clear: both;
+}
+
 #list-text {
 	text-align: justify;
 	padding-left: 5px;
-	width: 850px;
 	margin: 10px auto 5px auto;
 }
 
@@ -78,13 +97,13 @@ a:link {
 	text-decoration: none;
 }
 
-a:hover {
-	color: #0F0;
-	text-decoration: underline;
+a:visited {
+	color:#00C;
 }
 
-a:visited {
-	color: #F90;
+a:hover {
+	color:#F60;
+	text-decoration: underline;
 }
 
 a:active {
