@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	width: 100%;
+	margin: 5px auto;
+	font: normal 1em 'Montserrat', 'sans-serif';
+	background: #fff url(../images/tea-leaves.png) repeat;
+	
+	color: #333;
+}
+
+
+/* Header */
+header {
+	width: 100%;
+	margin: 40px 0px 0px 0px;
+	height: 140px;
+	background-color: #778C4A;
+	text-align: center;
+	overflow: hidden;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+	font: normal small-caps normal 2.5em/5% 'Amaranth', 'sans-serif';
+	color: #8C3503;
+	padding-left: 10px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	-webkit-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	-moz-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+	width: 100%;
+	font: italic normal normal large 'Changa One', 'cursive';
+	text-align: center;
+	color: #495925;
+}
+
+h3 {
+	padding-left: 20px;
+}
+
+.big {
+	font-size: larger;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #8C3503;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	-webkit-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	-moz-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+nav, footer {
+	/*margin: 1%;*/
+	text-align: center;
+	background-color: #495925;
+	padding: 0.5em 0;
+}
+
+footer {
+	font-size: 12px;
+	height: 50px;
+	color: #fff;
+}
+
+hr {
+	width: 100%;
+	margin: 0px;
+	height: 10px;
+	background-color: #C4982D;
+}
+
+ul {
+	width: 100%;
+	margin: 10px auto;
+	list-style-type: none;
+}
+
+ul li {
+	display: inline;
+	padding: 0.5em;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+
+
+a,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#C4B968;
+	text-decoration: underline;
+}
+
+a:active {
+	color:#61852F;
+}
+/* End Header */
+
+/* Content */
+#content {
+	overflow: auto;
+	margin: 0px auto;
+	background-color: #fff;
+	min-height: 720px;
+	width: 100%;
+	min-width: 1215px;
+}
+
+#gallery {
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+figure {
+	width: 240px;
+	height: 240px;
+	margin:5px auto;
+	padding:0;
+}
+
+figcaption {
+	font-size: x-small;
+	color: #8C3503;
+	font-style: italic;
+}
+
+img {
+	width: 240px;
+	height: 240px;
+	border: 2px solid #8C3503;
+	border-radius: 8px;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.clear {
+	clear: both;
+}
+
+p, blockquote {
+	width: 100%;
+	padding: 0 20px 5px 20px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+#info {
+	float: left;
+	width: 50%;
+	min-width: 600px;
+	margin: 40px 10px 0 10px;
+}
+
+#divReasons {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#divReasons span{
+	font:normal small-caps bold larger "Lucida Grande",sans-serif;
+	color: #8C3503;
+}
+
+ol {
+	padding-top: 0;
+	margin-top: 5px;
+}
+
+/* End Content */
+
+/* Form */
+#form-div {
+	float: left;
+	width: 45%;
+	min-width: 540px;
+	margin: 50px 10px 20px 10px;
+	padding-left: 10px;
+	font-size: .98em;
+}
+
+
+fieldset {
+	background-color: #B3BF8C;
+	border: solid 2px #360;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+	padding-left: 20px;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+fieldset h1 {
+	font-size: 28px;
+	padding-left: 0;
+	padding-bottom: 10px;
+}
+
+#subTitle  {
+	padding-bottom: 5px;
+}
+
+#contactMore {
+	padding: 50px 0 0 5px;
+	font-style: italic;
+	font-size: small;
+}
+
+#quantity {
+	padding-left: 20px;
+}
+
+
+
+form label, #subTitle,
+#quantity, #contactMore {
+	text-shadow: 2px 1px 1px #999;
+	-moz-text-shadow: 2px 1px 1px #999;
+	-webkit-text-shadow: 2px 1px 1px #999;
+}
+
+#inputName{
+	width: 400px;
+}
+
+input[type="number"] {
+	width: 330px;
+}
+
+#inputAddress {
+	width: 317px;
+}
+
+#inputEmail {
+	width: 340px;
+}
+
+input[type="number"], input[type="text"] {
+	border: solid 2px #999;
+	padding: 5px;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+input[type="radio"] {
+	padding-right: 5px;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid #C4982D;
+	background-color: #FFEA97;
+}
+
+select {
+	height: 26px;
+	width: 140px;
+	padding-top: 3px;
+}
+
+textarea {
+	width: 400px;
+	max-width: 400px;
+	height: 40px;
+	max-height: 40px;
+	border: solid 1px #CCC;
+	border-radius: 6px;
+	margin-top: 10px;
+	margin-left: 5px; 
+	padding: 10px;
+	
+	background: rgb(252,255,244); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(233,233,206,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(233,233,206,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%); /* IE10+ */
+}
+
+#submit-button {
+	float: right;
+	margin-right: 10px;
+	margin-top: 25px;
+}
+
+.submit-button {
+	height: 26px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px; 
+	border: solid 1px #ccc;
+	
+	background: rgb(242,246,248); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,246,248,1)), color-stop(50%,rgba(216,225,231,1)), color-stop(51%,rgba(181,198,208,1)), color-stop(100%,rgba(224,239,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* IE10+ */
+	
+	-webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:         1px 1px 2px 0px rgba(0, 0, 0, 0.4);
+	
+	text-shadow: 2px 2px 12px #333;
+	-moz-text-shadow: 2px 2px 12px #333;
+	-webkit-text-shadow: 2px 2px 12px #333;
+}
+
+.submit-button:hover {
+	cursor: pointer;
+		background: rgb(224,243,250); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,243,250,1)), color-stop(50%,rgba(216,240,252,1)), color-stop(51%,rgba(184,226,246,1)), color-stop(100%,rgba(182,223,253,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* IE10+ */
+}
+
+#emailError {
+	display: none;
+	color: red;
+	font-size: 12px;
+	margin-left: 140px;
+	height: 10px;
+}
+
+/* EndForm */
+
+/* Price Table */
+
+table#tablePrices {
+	width: 500px;
+	margin: 10px auto 20px auto;
+	text-align: left;
+	border: solid 1px #360;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+	padding-left: 20px;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+table#tablePrices tbody {
+	background: #fff url(../images/National_Organic_Program.jpg) no-repeat center center;
+}
+
+table#tablePrices thead tr {
+	height: 35px;
+	background-color: #C4982D;
+	border-bottom: solid 1px #360;
+	font-size: 1.1em;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 1px #333;
+	-moz-text-shadow: 2px 1px 1px #333;
+	-webkit-text-shadow: 2px 1px 1px #333;
+}
+
+table#tablePrices tbody tr {
+	height: 28px;
+	font-size: .95em;
+} 
+
+table#tablePrices td, 
+table#tablePrices th{
+	padding: 10px;
+	border-right: solid 1px #360;
+}
