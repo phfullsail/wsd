@@ -354,6 +354,7 @@ textarea {
 
 table#tablePrices {
 	width: 500px;
+	background: #fff url(../images/National_Organic_Program.jpg) no-repeat center center;
 	margin: 10px auto 20px auto;
 	text-align: left;
 	border: solid 1px #360;
@@ -366,9 +367,6 @@ table#tablePrices {
 	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
-table#tablePrices tbody {
-	background: #fff url(../images/National_Organic_Program.jpg) no-repeat center center;
-}
 
 table#tablePrices thead tr {
 	height: 35px;
