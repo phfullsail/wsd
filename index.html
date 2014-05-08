@@ -1,168 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>The Organic Box</title>
-        <link href="css/styles.css" type="text/css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-    <!-- Header -->
-    	<header>
-			<h1>The Organic Box</h1>
-            <hr/>
-            <nav id="nav">
-            	<ul>
-                	<li><a href="">Home</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Catering</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Place an Order</a></li>
-                </ul>
-            </nav>
-        </header>
-       <!-- End Header -->
-        
-        <!--  Main Content -->
-        <aside id="content">
-        <h2>Delivering delicious organic meals to your home or office!</h2>
-           
-           <!-- Images -->
-        	<section id="gallery">
-            	<table id="tableGallery">
-                	<tbody>
-                        <tr>
-                            <td>
-                                <figure>
-                                    <img src="images/beef_stew.jpg" alt="Beef Stew" />
-                                    <figcaption>Beef Stew</figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/citrus_chicken.jpg" alt="Citrus Chicken"/>
-                                    <figcaption>Citrus Chicken</figcaption>
-                                </figure>
-                                </td>
-                            <td>
-                                <figure>
-                                    <img src="images/ribs.jpg" alt="Red Wine Ribs" />
-                                    <figcaption>Red Wine Ribs</figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/mojito_salad.jpg" alt="Mojito Fruit Salad"/>
-                                    <figcaption>Mojito Fruit Salad</figcaption>
-                                </figure>
-                            </td>
-                            <td>
-                                <figure>
-                                    <img src="images/chocolate_cake.jpg" alt="Chocolate Cake" />
-                                    <figcaption>Chocolate Cake</figcaption>
-                                </figure>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <!-- End Images -->
-            
-            <section id="info">
-            <p><span class="big">The Organic Box</span> prepares delicious and nutritious 'organic' meals daily. We us only the best organic produce and meat products. Let us deliver your next favorite dish today!
-            <h3>What are organic foods?</h3>
-				<blockquote cite="http://en.wikipedia.org/wiki/Organic_food"><strong>Organic foods</strong> are produced using methods of organic farming. Currently, the European Union, the United 	States, Canada, Mexico, Japan and many other countries require producers to obtain special certification in order to market food as organic within their borders. In the context of these regulations, organic food is food produced in a way that complies with organic standards set by national governments and international organizations. Organic food production is a heavily regulated industry, distinct from private gardening.</blockquote>
-                <blockquote cite="http://en.wikipedia.org/wiki/Organic_food">Under US federal organic standards, if pests and weeds are not controllable through management practices, nor via organic pesticides and herbicides,"a substance included on the National List of synthetic substances allowed for use in organic crop production may be applied to prevent, suppress, or control pests, weeds, or diseases."</blockquote>
-                <div id="divReasons">
-                    <span>Three reason why you should try The Organic Box today:</span>
-                    <ol>
-                        <li>Our food is delicious!</li>
-                        <li>Our food is the best quality!</li>
-                        <li>Our food is guaranteed to be delivered fresh and fast!</li>
-                    </ol>
-                </div>
-              
-            </section>
-            <!-- End Main Content -->
-            
-            <!-- Form -->
-            <section id="form-div">
-            	<form id="orderForm" name="orderForm" action="" method="post">
-                	<fieldset>
-                    	<h1>Quick Order Form</h1>
-                        <label for="inputName">Name: </label><input type="text" id="inputName" required/><br/>
-                        <label for="inputAddress">Delivery Address:</label><input type="text" id="inputAddress" required/><br/>
-                        <label for="inputEmail">Email Address:</label><input type="text" id="inputEmail" required/>
-                        <span id="emailError">Please enter a valid email address.</span>
-                        <div id="subTitle">Weekly Specials:</div>
-                        <select>
-                        	<option>Beef Stew</option>
-                            <option>Citrus Chicken</option>
-                            <option>Red Wine Ribs</option>
-                            <option>Mojito Fruit Salad</option>
-                            <option>Chocolate Cake</option>
-						</select> 
-                        <span id="quantity">Quantity:
-                        <input id="radio1" name="quantity" type="radio" value="1" checked/><label for="radio1">1</label>
-                        <input id="radio2" name="quantity" type="radio" value="2"/><label for="radio2">2</label>
-                        <input id="radio3" name="quantity" type="radio" value="3"/><label for="radio3">3</label> </span> 
-                        <div id="contactMore">For quantities above 3, please call <em>(762) Org-anic.</em></div>
-                          <textarea placeholder="Special instructions"></textarea>                      
-                        <div id="submit-button"><input type="submit" value="Submit" class="submit-button"/></div>
-                    </fieldset>
-                </form>
-            </section>
-            <!-- End Form -->
-            <div class="clear"></div>
-            
-            <!-- Prices Table -->
-            <section>
-            	<table id="tablePrices">
-                	<thead>
-                    	<tr>
-                            <th>Menu Item</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    	<tr>
-                            <td>Beef Stew</td>
-                            <td>$5.95</td>
-                        </tr>
-                        <tr>
-                        	<td>Citrus Chicken</td>
-                            <td>$6.95</td>
-                        </tr>
-                        <tr>
-                        	<td>Red Wine Ribs</td>
-                            <td>$7.95</td>
-                        </tr>
-                        <tr>
-                        	<td>Mojito Fruit Salad</td>
-                            <td>$3.95</td>
-                        </tr>
-                        <tr>
-                        	<td>Chocolate Cake</td>
-                            <td>$3.95</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <!-- End Prices Table -->
-         </aside>
-        
-        <!-- Footer -->
-        <footer id="footer">
-        	<div><a href="http://en.wikipedia.org/wiki/Organic_food" target="_blank">http://en.wikipedia.org/wiki/Organic_food</a></div>
-            <div><a href="http://www.dinpattern.com/" target="_blank">http://www.dinpattern.com/</a></div>
-            <div>Images from AllRecipies.com: <a href="http://allrecipes.com/" target="_blank"> http://allrecipes.com/</a></div>
-        </footer>
-        <!-- End Footer -->
-        
-        <!-- Link to javascript file -->
-        <script type="text/javascript" src="js/validation.js"></script>
-        
-	</body>
-</html>							
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>WiU Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="wrapper">
+  <header>
+     <h1>Project Name: WorldSurf</h1>
+  </header>
+  <section class="main">
+    <h2 class="desc-title">Project Description</h2>
+    <!-- Replace this text with your description of the project -->
+    <p class="description">WorldSurf.com will be the first web 2.0 surf portal available on devices including mobile. The site will 
+serve as an information portal to the public providing the highest visibility of content on various surf destinations around the world (Homepage Ui). Users will be able to explore detailed information of each destination (Details Ui). Each destination will include “members only” content, providing WorldSurf.com members with bookmark capability, web cam access to the destination, as well as user-supplied “tips & tricks”. Additionally, the web application will incorporate a sign-up section that will allow users to create a free account (Forms UI). With an account, members will have access to the 
+“members only” content for each destination, as well as access to “My World”, the WorldSurf.com content management systems. Here users will be able to add and edit information and photos pertaining to a destination, as well as create new surf destinations of their own (moderated). WorldSurf.com will be the only site of its kind with content created for surfers, by surfers.</p>
+    <figure>
+    <!--   add your image to the img folder 
+      Replace the "img.jpg" with the name of your image  -->
+      <img src="img/surf2.jpg" alt="Surfing - beach"  />
+      <figcaption>Riding the waves</figcaption>    
+    </figure>
+  </section>
+  <section class="sec">
+    <h2>Usability Testing</h2>
+    <table id="tests">
+       <thead>
+          <tr>
+            <th>Links to Tests</th>
+            <th>Links to Test Results</th> 
+          </tr>
+       </thead>
+       <tbody>
+          <tr class="odd">
+             <td><a href="#">Link to test 1 here</a></td>
+             <td><a href="">Link to test results 1</a></td>
+          </tr>
+          <tr>
+             <td><a href="#">Link to test 2 here</a></td>
+             <td><a href="">Link to test results 2</a></td>
+          </tr>
+          <tr class="odd">
+             <td><a href="#">Link to test 3 here</a></td>
+             <td><a href="">Link to test results 3</a></td>
+          </tr>
+          <tr>
+             <td><a href="#">Link to test 4 here</a></td>
+             <td><a href="#">Link to test results 4</a></td>
+          </tr>
+          <tr class="odd">
+             <td><a href="#">Link to test 5 here</a></td>
+             <td><a href="#">Link to test results 5</a></td>
+          </tr>
+          <!-- start link -->
+          <tr>
+             <td><a href="#">Link to test 6 here</a></td>
+             <td><a href="#">Link to test results 6</a></td>
+          </tr>
+          <!-- end link -->
+          <!-- to add a new link copy from start link to end link and paste here-->
+       </tbody>
+    </table>
+  </section>
+  
+  <footer> &copy; 2014 Pamela Holmes</footer>
+  </div> <!-- #wrapper div ends here-->
+</body>
+</html>
