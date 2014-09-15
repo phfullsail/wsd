@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet" >
+    
+    <title>Party Finder</title>
+</head>
+
+<body>
+
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="logo" href="index.html">LOGO PLACEHOLDER</a>
+            </div>
+            <!-- Top Menu Items -->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-right links-top">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="inactive"><a href="spots.html">Spots</a></li>
+                    <li class="inactive"><a href="about.html">About Us</a></li>
+                    <li class="inactive"><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+        </nav>        
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-xs-12">
+    
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="signInModalLabel">Party Finder - Sign In</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!-- End Sign Modal -->
+
+        <!-- Member Modal -->
+        <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="memberModalLabel">Party Finder - Become a Member</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="inputEmailMember" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmailMember" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPasswordMember" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPasswordMember" placeholder="Password">
+                    </div>
+                  </div>
+                   <div class="form-group">
+                    <label for="inputPasswordConfirmMember" class="col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPasswordConfirmMember" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Join</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!-- End Member Modal -->
+
+          <nav>
+            <div class="member-container">
+                <ul class="navbar-nav links-member">
+                    <li data-toggle="modal" data-target="#memberModal"><a href="#">Become a Member</a></li>
+                    <li data-toggle="modal" data-target="#signInModal"><a href="#">Sign In</a></li>
+                    <li>
+                        <input type="text"/>
+                    </li>
+                    <li><div><img src="images/search.png" alt="Search"></div></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="top-banner">
+            <div class="banner-text">Where's the party at?</div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-xs-4 col-md-3">
+        <nav>
+            <div class="collapse navbar-collapse navbar-ex1-collapse" >
+                    
+                <ul class="nav side-nav">
+                    <li><div><h4>Filters</h4></div></li>
+                    <li id="selectType">
+                        <select>
+                            <option>All Types</option>
+                            <option selected>Kid's Party</option>
+                        </select>
+                    </li>
+                    <li id="selectAge">
+                        <select>
+                            <option>All Ages</option>
+                        </select>
+                    </li>
+                    <li id="selectSize">
+                        <select>
+                            <option>All Sizes</option>
+                        </select>
+                    </li>
+                    <li id="selectCatering">
+                        <select>
+                            <option>All Catering</option>
+                        </select>
+                    </li>
+                    <li id="zipcode">
+                        <input type="text" placeholder="Filter by Zipcode"/>
+                    </li>
+                    <ul>
+                     <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <a href="results.html">
+                        <button type="submit" class="btn btn-default">Search</button>
+                        </a>
+                    </div>
+                  </div>
+                   <!--  <li>
+                        <div>
+                            <a href="results.html">
+                            <button type="button">Search</button>
+                            </a>
+                        </div>
+                    </li> -->
+                <ul>
+                    <li><div><h4>Party Resources</h4></div></li>
+                    <li><a href="http://www.partycity.com/" target="_blank">Party City</a></li>
+                    <li><a href="http://www.birthdayexpress.com/" target="_blank">Birthday Express</a></li>
+                    <li><a href="http://www.orientaltrading.com/" target="_blank">Oriental Trading Co</a></li>
+                    <li><a href="http://www.shindigz.com/" target="_blank">Shindigz</a></li>
+               </ul>
+            
+           </div>
+          
+           <!-- /.navbar-collapse -->
+        </nav>
+
+      </div>
+      <div class="col-xs-8 col-md-9">
+        <div class="container-main">
+            <div><h4>Quick Search</h4></div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <figure>
+                    <img src="images/kids.jpg" alt="Kids Party" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Kids Party</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <figure>            
+                        <img src="images/bachelorette.jpg" alt="Bachelor/ette" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Bachelor/ette</figcaption>
+                    </figure>    
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-lg-6 col-md-6 col-xs-6">
+                     <figure>
+                        <img src="images/wedding.jpg" alt="Weddings" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Weddings</figcaption>
+                      </figure>  
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <figure>            
+                        <img src="images/birthday.jpg" alt="Birthday Party" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Birthday</figcaption>
+                    </figure>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col-lg-6 col-md-6 col-xs-6">
+                     <figure>
+                        <img src="images/retire.jpg" alt="Retirement" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Retirement</figcaption>
+                      </figure>  
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6">
+                    <figure>            
+                        <img src="images/grad.jpg" alt="Graduation" class="img-responsive img-thumbnail index-thumb">
+                        <figcaption>Graduation</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="container-bottom">
+            Placeholder
+        </div>
+      </div>
+     
+    </div>
+
+<!-- javascript-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
