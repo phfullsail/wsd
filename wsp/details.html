@@ -5,15 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet" >
-     <script src="js/respond.min.js"></script>
-    <title>Party Finder</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
+    <script src="js/respond.min.js"></script>
+    <title>Party Finder - Details</title>
 </head>
 
 <body>
 
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid wrapper">
+ <div class="row">
       <div class="col-xs-12 col-md-8">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             
@@ -25,67 +28,59 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="index.html">LOGO PLACEHOLDER</a>
+                <div class="logo"><img src="images/party_finder_logo2.png" alt="Party Finder Logo"></div>
             </div>
             <!-- Top Menu Items -->
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right links-top">
-                    <li class="inactive"><a href="index.html">Home</a></li>
-                    <li class="inactive"><a href="spots.html">Spots</a></li>
-                    <li class="inactive"><a href="about.html">About Us</a></li>
-                    <li class="inactive"><a href="help.html">Help</a></li>
+                    <li class="inactive"><a href="#" class="linkHome">Home</a></li>
+                    <li class="inactive"><a href="#" class="linkSpots">Spots</a></li>
+                    <li class="inactive"><a href="#">About Us</a></li>
+                    <li class="inactive"><a href="#">Help</a></li>
                 </ul>
+                <div class="clear"></div>
             </div>
+             <div class="headerParty"><h1>Where's the party at?</h1></div>  
         </nav>        
       </div>
     </div>  
+
+
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-11">
             <nav>
             <div class="member-container">
-                <ul class="navbar-nav">
-                    <li><a href="#">Print</a></li>
-                    <li><a href="#">Email</a></li>
-                    <li>
-                        <div><img src="images/spots.png" alt="Spots"></div>
-                    </li>
-                    <li>
-                        <div><a href="#">Save to Spots</a></div>
-                    </li>
-                    <li>
-                        <div><img src="images/pinterest.png" alt="Pinterest"></div>
-                    </li>
-                    <li>
-                        <div><img src="images/twitter.png" alt="Twitter"></div>
-                    </li>
-                    <li>
-                        <div><img src="images/fb.png" alt="Face Book"></div>
-                    </li>
-                </ul>
                 
-            </div>
+                    <div class="print-link float-left"><a href="#">Print</a></div>
+                    <div class="email-link float-left"><a href="#">Email</a></div>
+                    <div class="image-links spots-link float-left"><img src="images/spots2.png" alt="Spots"></div>
+                    <div class="spots-link float-left"><a href="#">Save to Spots</a></div>
+                    <div class="image-links pinterest-link float-left"><img src="images/pinterest2.png" alt="Pinterest" class="img-responsive"></div>
+                    <div class="image-links twitter-link float-left"><img src="images/twitter2.png" alt="Twitter" class="img-responsive"></div>
+                    <div class="image-links fb-link float-left"><img src="images/fb2.png" alt="Facebook" class="img-responsive"></div>
+              </div>
         </nav>
         </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <div>Large Ad Placeholder</div>
+        <div class="lg-ad-banner"><h3>Large Ad PlaceHolder</h3></div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
 
         <div class="search-banner">
-            <div>Details - Kids Party - Buccaneer Pirate Cruise</div>
+            <div>Details-Kid's Party-Buccaneer Pirate Cruise</div>
         </div>
       </div>
       </div>
-    </div>
-    <div class="row">
+    
+    <div class="row details-container">
       <div class="col-xs-12 col-md-12 col-lg-12">
         <div class="detail-content">
             <h3>Buccaneer Pirate Cruise</h3>
-            <div><img src="images/pirate_lg.png" alt="Pirate Cruise" /></div>
+            <div id="detailsImg"><img src="images/pirate_lg.png" alt="Pirate Cruise" /></div>
             <div><a href="www.destinpirateship.com" target="_blank">www.destinpirateship.com</a></div>
             <div>
                 <span>100 Harbor Blvd, Suite B Destin, FL 32541</span><br/>
@@ -104,23 +99,56 @@
             <div>Year Round Cruises</div>
         </div>
         </div>
+        <div class="push"></div>
       </div>
      
    
 
-    <!-- Columns are always 50% wide, on mobile and desktop -->
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="detail-bottom">
-            Placeholder
-        </div>
+      <!-- footer -->
+  <div class="row footer">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+        <nav class="navbar-fixed-bottom navbar-bottom"> 
+            <div>
+                <div class="float-left footer-links">
+                  <h5>About Party Finder</h5>
+                  <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Press Release</a></li>
+                    <li><a href="#">Social Media</a></li>
+
+                  </ul>
+                </div>
+                <div class="float-left footer-links">
+                  <h5>Customer Service</h5>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+
+                  </ul>
+                </div>
+                <div class="float-left footer-links">
+                  <h5>My Account</h5>
+                  <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Become a Member</a></li>
+                    <li><a href="#">Forgot Password</a></li>
+
+                  </ul>
+                </div>
+            <div class="clear"></div>
+          </div>
+        </nav>            
       </div>
+      
+      <!-- end footer -->
      
     </div>
-
+</div>
 <!-- javascript-->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

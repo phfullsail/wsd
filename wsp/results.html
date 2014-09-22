@@ -5,14 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet" >
-     <script src="js/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
+    <script src="js/respond.min.js"></script>
     <title>Party Finder - Results</title>
 </head>
 
 <body>
 
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="container-fluid">
+<div class="container-fluid wrapper">
     <div class="row">
       <div class="col-xs-12 col-md-8">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -25,25 +28,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="index.html">LOGO PLACEHOLDER</a>
+                <div class="logo"><img src="images/party_finder_logo2.png"></div>
             </div>
             <!-- Top Menu Items -->
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right links-top">
-                    <li class="inactive"><a href="index.html">Home</a></li>
-                    <li class="inactive"><a href="spots.html">Spots</a></li>
-                    <li class="inactive"><a href="about.html">About Us</a></li>
-                    <li class="inactive"><a href="help.html">Help</a></li>
+                    <li class="inactive"><a href="#" class="linkHome">Home</a></li>
+                    <li class="inactive"><a href="#" class="linkSpots">Spots</a></li>
+                    <li class="inactive"><a href="#">About Us</a></li>
+                    <li class="inactive"><a href="#">Help</a></li>
                 </ul>
+                <div class="clear"></div>
             </div>
-        </nav>        
+             <div class="headerParty"><h1>Where's the party at?</h1></div>  
+        </nav> 
+             
       </div>
+     
     </div>  
-     <div class="row">
-      <div class="col-xs-12">
-        <div>Large Ad Placeholder</div>
-      </div>
-    </div>
+
+    <!-- large ad banner -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="lg-ad-banner-high"><h3>Large Ad</h3></div>
+          </div>
+    	</div>
+    
     <div class="row">
       <div class="col-xs-12">
           
@@ -52,61 +62,84 @@
         </div>
       </div>
       </div>
-    </div>
+   
 
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-    <div class="row">
-      <div class="col-xs-4 col-md-3">
-        <nav>
-            <div class="collapse navbar-collapse navbar-ex1-collapse" >
-                    
-                <ul class="nav side-nav">
-                    <li><div><h4>Modify Filters</h4></div></li>
-                    <li id="selectType">
-                        <select>
-                            <option>All Types</option>
-                            <option selected="true">Kid's Party</option>
-                        </select>
-                    </li>
-                    <li id="selectAge">
-                        <select>
-                            <option>All Ages</option>
-                        </select>
-                    </li>
-                    <li id="selectSize">
-                        <select>
-                            <option>All Sizes</option>
-                        </select>
-                    </li>
-                    <li id="selectCatering">
-                        <select>
-                            <option>All Catering</option>
-                        </select>
-                    </li>
-                    <li id="zipcode">
-                        <input type="text" placeholder="Filter by Zipcode"/>
-                    </li>
-                    <li>
-                        <div>
-                            <button type="button">Search</button>
-                        </div>
-                    </li>
-                    <li><div><h4>Party Resources</h4></div></li>
+    <div class="row columns-result-bg results-content">
+    <div class="col-xs-4 col-md-4 col-lg-4">
+            <div id="modify-text">
+                <h4>Modify Filters</h4>
+            </div>
+            <div class="sidebar">
+                <select class="selectpicker dropup" data-width="95%">
+                    <option>All Types</option>
+                    <option>Bachelor(ette)</option>
+                    <option>Birthday</option>
+                    <option>Graduation</option>
+                    <option>Holiday</option>
+                    <option selected>Kid's Party</option>
+                    <option>Retirement</option>
+                    <option>Wedding</option>
+                    <option>Other</option>
+                </select>
+            </div>
+           
+            <div class="sidebar">
+                <select class="selectpicker" data-width="95%">
+                    <option>All Ages</option>
+                    <option>1 - 10 years</option>
+                    <option>10 - 20 years</option>
+                    <option>21 - 30 years</option>
+                    <option>31 - 40 years</option>
+                    <option>41 - 50 years</option>
+                    <option>51 - 60 years</option>
+                    <option>61 - 70 years</option>
+                    <option>71 - 80 years</option>
+                    <option>81 - 90 years</option>
+                    <option>91 - 100 years</option>
+                    <option>100+</option>
+                </select>
+            </div>
+            <div class="sidebar">
+                <select class="selectpicker" data-width="95%">
+                    <option>All Sizes</option>
+                    <option>1-10</option>
+                    <option>11-20</option>
+                    <option>21-30</option>
+                    <option>31-40</option>
+                    <option>41-50</option>
+                    <option>50+</option>
+                </select>
+            </div>
+            <div class="sidebar">
+                <select class="selectpicker" data-width="95%">
+                    <option>Catering Options</option>
+                    <option>Catering</option>
+                    <option>No Catering</option>
+                </select>
+            </div>
+            <div>
+                <input class="form-control" type="text" placeholder="Filter by Zipcode"/>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-default btn-search" id="btnFilters">Search</button>
+            </div>
+
+            <div id="resourceLinks">
+                <h4>Party Resources</h4>
+                <ul>
                     <li><a href="http://www.partycity.com/" target="_blank">Party City</a></li>
                     <li><a href="http://www.birthdayexpress.com/" target="_blank">Birthday Express</a></li>
                     <li><a href="http://www.orientaltrading.com/" target="_blank">Oriental Trading Co</a></li>
                     <li><a href="http://www.shindigz.com/" target="_blank">Shindigz</a></li>
-               </ul>
+                </ul>
+            </div>
             
-           </div>
-          
-           <!-- /.navbar-collapse -->
-        </nav>
-
-      </div>
-      <div class="col-xs-8 col-md-9">
-        <div class="container-main">
-            <div class="bread-crumb"><h4><< Previous Next >></h4></div>
+        </div>
+      <div class="col-xs-7 col-md-8 col-lg-8">
+        <div class="container-main-results">
+            <div class="bread-crumb"><h5><< Previous Next >></h5></div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="result-thumb">
@@ -151,16 +184,15 @@
             </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
-                    <a href="details.html">
-                    <div class="result-thumb">
+                    <div class="result-thumb" id="pirateLink">
                         <img src="images/pirate.png" alt="Kids Party" class="img-responsive img-thumbnail">
                     </div>
-                    <div class="result-detail">
+                    <div class="result-detail-active">
                         <h4>Buccaneer Pirate Cruise</h4>
                         <p>Buccaneer Pirate Ship takes to the seas from HarborWalkVillage Marina...</p>
-                        <div class="review-link"><a href="#">245 Reviews</a></div>
+                        <div class="review-link"><a href="details.html"></a><a href="#">245 Reviews</a></div>
                     </div>
-                     </a>
+                     
                     <div class="clear"></div>
                 </div>
             </div>
@@ -180,21 +212,53 @@
             </div>
         </div>
       </div>
-    
+    <div class="push"></div>
     </div>
 
     <!-- Columns are always 50% wide, on mobile and desktop -->
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="container-bottom">
-            Placeholder
-        </div>
+    <div class="row footer">
+     <div class="col-lg-12 col-md-12 col-xs-12">
+         <nav class="navbar-fixed-bottom navbar-bottom"> 
+                <div>
+                    <div class="float-left footer-links">
+                      <h5>About Party Finder</h5>
+                      <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Press Release</a></li>
+                        <li><a href="#">Social Media</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="float-left footer-links">
+                      <h5>Customer Service</h5>
+                      <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+
+                      </ul>
+                    </div>
+                    <div class="float-left footer-links">
+                      <h5>My Account</h5>
+                      <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Become a Member</a></li>
+                        <li><a href="#">Forgot Username/Password</a></li>
+
+                      </ul>
+                    </div>
+                <div class="clear"></div>
+            </div>
+        </nav>            
       </div>
      
     </div>
 </div>	
 <!-- javascript-->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
