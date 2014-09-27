@@ -6,19 +6,19 @@
 (function($){
 
 /************** Home navigation ***************/
-	$(".linkHome").click(function(e) {
+   $(".linkHome").click(function(e){
 		e.preventDefault();
 		window.location.assign("index.html");
 	});
 
 /************** Spots navigation ***************/	
-	$(".linkSpots").click(function(e) {
+	$(".linkSpots").click(function(e){
 		e.preventDefault();
 		window.location.assign("spots.html");
 	});
 
 /************* Search Button *******************/
-	$("#btnFilters").click(function(e) {
+	$("#btnFilters").click(function(e){
 		e.preventDefault();
 		window.location.assign("results.html");
 	});
@@ -55,11 +55,7 @@
 			window.open("https://www.facebook.com/", "_blank");
 	});
 
-	$(".pinterest-link").mouseover(function() {
-		
-	}) 
-
-
+	
 	/********** Enable Bootstrap-Select ************/
 	 $('.selectpicker').selectpicker();
 
