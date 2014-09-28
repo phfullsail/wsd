@@ -651,10 +651,12 @@ ul li {
 
 	}
 
-.result-thumb,
-.result-detail {
+
+.result-detail,
+.result-detail-active {
 	float: left;
-	/*margin-left; 10px;*/
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .spots-item {
@@ -662,6 +664,7 @@ ul li {
 }
 
 .result-thumb {
+	float: left;
 	border: 4px solid #0084b0;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -828,7 +831,7 @@ ul li {
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+and (max-device-width : 1200px) {
 
 #detail-main {
 	margin-top: 20px;
@@ -843,3 +846,18 @@ figcaption {
 }
 }
 
+@media only screen 
+and (min-device-width : 1024px) {
+
+/*.columns-result-bg {
+  background-image:
+    linear-gradient(
+      to right, 
+      #000,
+      #000 25%,
+      #fff 15%,
+      #fff 85%,
+      #fff 85%
+    );
+}*/
+}
