@@ -779,6 +779,18 @@ ul li {
 	font-size: 12px;
 }
 
+.columns-result-bg {
+  background-image:
+    linear-gradient(
+      to right, 
+      #000,
+      #000 40%,
+      #fff 15%,
+      #fff 85%,
+      #fff 85%
+    );
+}
+
 }
 
 @media(max-width: 800px) and
@@ -791,6 +803,18 @@ ul li {
 	.small-ad h3 {
 		font-size: 15px;
 	}
+	
+	.columns-result-bg {
+  background-image:
+    linear-gradient(
+      to right, 
+      #000,
+      #000 40%,
+      #fff 15%,
+      #fff 85%,
+      #fff 85%
+    );
+}
 }
 
 @media(max-width: 1024px) and
